@@ -1,7 +1,7 @@
 from conans import ConanFile, CMake, tools
 
 class PrebuiltCatch2(ConanFile):
-    name = "Catch2"
+    name = "prebuilt-catch2"
     version = "2.7.1"
     url = "https://github.com/catchorg/Catch2"
     license = "MIT"
