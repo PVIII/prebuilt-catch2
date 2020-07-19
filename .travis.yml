@@ -2,6 +2,7 @@ env:
    global:
      - CONAN_STABLE_BRANCH_PATTERN: "master/*"
      - CONAN_UPLOAD_ONLY_WHEN_STABLE: 0
+     - CONAN_REMOTES: https://api.bintray.com/conan/catchorg/Catch2
 
 sudo: required
 language: cpp
@@ -25,6 +26,10 @@ matrix:
       env: CONAN_CLANG_VERSIONS=6.0 CONAN_DOCKER_IMAGE=conanio/clang60
     - <<: *linux
       env: CONAN_CLANG_VERSIONS=7.0 CONAN_DOCKER_IMAGE=conanio/clang7
+    - <<: *linux
+      env: CONAN_CLANG_VERSIONS=8.0 CONAN_DOCKER_IMAGE=conanio/clang8
+    - <<: *linux
+      env: CONAN_CLANG_VERSIONS=9.0 CONAN_DOCKER_IMAGE=conanio/clang9
     - <<: *linux
       env: CONAN_GCC_VERSIONS=6 CONAN_DOCKER_IMAGE=conanio/gcc6
     - <<: *linux
