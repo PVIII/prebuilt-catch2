@@ -23,4 +23,3 @@ pip install conan --upgrade --user
 pip install conan_package_tools --user
 
 conan user
-conan remote add catchorg https://api.bintray.com/conan/catchorg/Catch2
